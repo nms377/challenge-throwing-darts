@@ -16,14 +16,14 @@ let score = 0;
 		}
 	}
 
-//	checks every index value is less than 5 and adds 100pts to score if true
-if (radius.every(lessThanFive) && radius.length != 0) {
-	score += 100;
-} else {
-	score += 0;
-}
+	//	checks every index value is less than 5 and adds 100pts to score if true
+	if (radius.every(lessThanFive) && radius.length != 0) {
+		score += 100;
+	} else {
+		score += 0;
+	}
 
-return score;
+	return score;
 
 }
 
