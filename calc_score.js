@@ -2,7 +2,7 @@
 
 function scoreThrows (radius) {
 
-	console.log('radius', radius);
+	// console.log('radius', radius);
 
 let score = 0;
 
@@ -32,6 +32,7 @@ function lessThanFive (element, index, array) {
 	return element < 5;
 }
 
-console.log(scoreThrows([1, 2, 3, 4]));
 console.log(scoreThrows([1, 5, 11]));
 console.log(scoreThrows([15, 20, 30]));
+console.log(scoreThrows([1, 2, 3, 4]));
+console.log(scoreThrows([1, 2, 3, 4, 15, 30, 20, 1, 5, 11]));
