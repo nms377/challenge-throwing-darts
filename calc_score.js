@@ -2,27 +2,26 @@
 
 function scoreThrows (radius) {
 
-	// console.log('radius', radius);
-
 let score = 0;
 
-		for ( var i = 0; i < radius.length; i++) {	
+	for ( var i = 0; i < radius.length; i++) {	
 
-			//	checks radius and adds score
-			if ( radius[i] > 10 ) {
-				score += 0;
-			} else if ( radius[i] >= 5 && radius[i] <= 10) {
-				score += 5;
-			} else if ( radius[i] < 5 ) {
-			  score += 10;
-			}
-		}
-
-		if (radius.every(lessThanFive)) {
-			score += 100;
-		} else {
+		//	checks radius and adds score
+		if ( radius[i] > 10 ) {
 			score += 0;
+		} else if ( radius[i] >= 5 && radius[i] <= 10) {
+			score += 5;
+		} else if ( radius[i] < 5 ) {
+		  score += 10;
 		}
+	}
+
+	//	checks that every index value is less than 5 and add 100pts to score if true
+	if (radius.every(lessThanFive)) {
+		score += 100;
+	} else {
+		score += 0;
+	}
 
 	return score;
 
